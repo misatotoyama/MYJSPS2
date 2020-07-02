@@ -40,3 +40,46 @@
         console.log(`Score ${i}: ${scores[i]}`);
     }
 }
+{
+    const scores = [80, 90, 40, 70];
+    scores.splice(1, 0, 30, 50);
+
+    for (let i = 0; i < scores.length; i++){
+        console.log(`Score ${i}: ${scores[i]}`);
+    }
+}
+{
+    const otherScores = [10, 20, 30];
+    const scores =[80, 90, 40, 70, ...otherScores];
+    // console.log(scores);
+
+    function sum(a, b, c){
+        console.log(a + b + c);
+    }
+
+    sum(...otherScores);
+}
+{
+    const scores = [80, 90, 40, 70];
+
+    const [a, b, c, d] = scores;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+}
+{
+    const scores = [800, 900, 400, 700];
+
+    const [a, b, ...others] = scores;
+    console.log(a);
+    console.log(b);
+    console.log(others);
+}
+{
+    const scores = [80, 90, 40, 70];
+
+    scores.forEach((score, index) =>{
+        console.log(`Score:  ${index}; ${score}`);
+    });
+}
