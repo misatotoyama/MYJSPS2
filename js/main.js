@@ -188,3 +188,36 @@
     console.log(x);
     console.log(y);
 }
+
+{
+    const str = 'hello';
+
+    console.log(str.substring(2, 4));
+}
+{
+    const str = 'hello';
+
+    console.log(str.length);
+}
+{
+    const str = 'hello';
+
+    console.log(str[1]);
+}
+{
+    const d = [2019, 11, 14];
+
+    console.log(d.join('/'));
+}
+{
+    const t = '17:08:24';
+    console.log(t.split(':'));
+}
+{
+    const t = '17:08:24';
+
+    const[hour, minute, second] = t.split(':');
+    console.log(hour);
+    console.log(minute);
+    console.log(second);
+}
